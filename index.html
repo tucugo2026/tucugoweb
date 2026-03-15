@@ -1,22 +1,22 @@
-<!doctype html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TucuGo | Movilidad, delivery y negocios</title>
-  <meta name="description" content="TucuGo conecta viajes en auto, moto, SUV, fletes, delivery y negocios en una misma plataforma. Disponible en español, inglés y portugués." />
-  <style>
+<!doctype html
+<html lang="es"
+<head
+  <meta charset="UTF-8" /
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /
+  <titleTucuGo | Movilidad, delivery y negocios</title
+  <meta name="description" content="TucuGo conecta viajes en auto, moto, SUV, fletes, delivery y negocios en una misma plataforma. Disponible en español, inglés y portugués." /
+  <style
     :root{
-      --bg:#07111f;
-      --bg2:#0b1628;
-      --card:rgba(255,255,255,.06);
-      --line:rgba(255,255,255,.1);
-      --text:#f8fafc;
-      --muted:rgba(248,250,252,.72);
-      --orange:#f97316;
-      --orange2:#fb923c;
+      --bg:#f6f9ff;
+      --bg2:#eef4ff;
+      --card:#ffffff;
+      --line:#d9e4f5;
+      --text:#10213a;
+      --muted:#5f6f86;
+      --orange:#ff6a00;
+      --orange2:#ff9b2f;
       --green:#22c55e;
-      --shadow:0 20px 50px rgba(0,0,0,.35);
+      --shadow:0 18px 40px rgba(11,70,183,.10);
       --radius:24px;
       --max:1200px;
     }
@@ -25,7 +25,7 @@
     body{
       margin:0;
       font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background: linear-gradient(180deg, var(--bg), #0b1320 50%, #0a1220 100%);
+      background: linear-gradient(180deg, #f6f9ff, #eef4ff 50%, #f8fbff 100%);
       color:var(--text);
       line-height:1.5;
     }
@@ -35,7 +35,7 @@
     .topbar{
       position:sticky;top:0;z-index:30;
       backdrop-filter: blur(14px);
-      background:rgba(7,17,31,.78);
+      background:rgba(246,249,255,.94);
       border-bottom:1px solid var(--line);
     }
     .topbar-inner{
@@ -44,32 +44,31 @@
       flex-wrap:wrap;
     }
     .brand{display:flex;align-items:center;gap:14px}
-    .brand img{width:62px;height:auto;border-radius:18px;background:rgba(255,255,255,.05);padding:4px}
-    .brand h1{font-size:1.2rem;margin:0;font-weight:800}
-    .brand p{margin:2px 0 0;color:var(--muted);font-size:.92rem}
+    .brand img{width:78px;height:auto;border-radius:18px;background:#fff;padding:6px;box-shadow:0 12px 24px rgba(11,70,183,.12)}
+    .brand h1{font-size:1.2rem;margin:0;font-weight:800;color:#10213a}
+    .brand p{margin:2px 0 0;color:rgba(255,255,255,.9);font-size:.92rem}
     .nav{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
-    .nav a{font-size:.95rem;color:var(--muted)}
-    .nav a:hover{color:#fff}
+    .nav a{font-size:.95rem;color:#51647f}
+    .nav a:hover{color:#0b46b7}
     select{
-      background:rgba(255,255,255,.06);color:#fff;border:1px solid var(--line);
+      background:#fff;color:#10213a;border:1px solid var(--line);
       padding:10px 12px;border-radius:14px;outline:none
     }
     .hero{
       position:relative;overflow:hidden;
       background:
-        linear-gradient(135deg, rgba(249,115,22,.16), transparent 32%),
-        radial-gradient(circle at 88% 18%, rgba(14,165,233,.18), transparent 22%),
-        linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+        linear-gradient(135deg, rgba(11,70,183,.95), rgba(20,87,209,.92) 55%, rgba(255,138,0,.94)),
+        radial-gradient(circle at 88% 18%, rgba(255,255,255,.18), transparent 22%);
       border-bottom:1px solid var(--line);
     }
     .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center;padding:56px 0}
     .badge{
       display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;
-      background:rgba(249,115,22,.12);border:1px solid rgba(249,115,22,.28);color:#fed7aa;
+      background:rgba(255,255,255,.95);border:1px solid #ffd29b;color:#ff7a00;
       font-size:.92rem;font-weight:600
     }
-    .hero h2{font-size:clamp(2.2rem, 4vw, 4.4rem);line-height:1.03;margin:18px 0 14px;font-weight:900;letter-spacing:-.03em}
-    .hero p.lead{font-size:1.12rem;color:var(--muted);max-width:700px;margin:0 0 22px}
+    .hero h2{font-size:clamp(2.2rem, 4vw, 4.4rem);line-height:1.03;margin:18px 0 14px;font-weight:900;letter-spacing:-.03em;color:#10213a}
+    .hero p.lead{font-size:1.12rem;color:rgba(255,255,255,.92);max-width:700px;margin:0 0 22px}
     .actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
     .btn{
       display:inline-flex;align-items:center;justify-content:center;gap:10px;
@@ -79,7 +78,7 @@
     }
     .btn:hover{transform:translateY(-1px)}
     .btn-primary{background:linear-gradient(135deg, var(--orange), var(--orange2));color:#fff;box-shadow:var(--shadow)}
-    .btn-secondary{background:rgba(255,255,255,.06);border-color:var(--line);color:#fff}
+    .btn-secondary{background:#fff;border-color:#d9e4f5;color:#10213a}
     .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
     .card{
       background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)
@@ -89,11 +88,11 @@
     .visual{position:relative}
     .visual-card{overflow:hidden}
     .visual-card img{height:100%;min-height:500px;width:100%;object-fit:cover}
-    .visual-overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.05), rgba(7,17,31,.78) 82%)}
+    .visual-overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(11,70,183,.05), rgba(10,36,95,.74) 82%)}
     .floating{position:absolute;left:20px;right:20px;bottom:20px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    .mini{padding:16px;background:rgba(7,17,31,.78);border:1px solid rgba(255,255,255,.12);border-radius:22px}
-    .mini h4{margin:0 0 8px;font-size:1rem}
-    .mini p{margin:0;color:var(--muted);font-size:.94rem}
+    .mini{padding:16px;background:rgba(246,249,255,.94);border:1px solid rgba(255,255,255,.12);border-radius:22px}
+    .mini h4{margin:0 0 8px;font-size:1rem;color:#fff}
+    .mini p{margin:0;color:rgba(255,255,255,.86);font-size:.94rem}
     section{padding:78px 0}
     .section-head{max-width:760px;margin-bottom:26px}
     .section-head h3{font-size:clamp(1.9rem,3vw,3rem);margin:0 0 10px;font-weight:900;letter-spacing:-.02em}
@@ -103,7 +102,7 @@
     .icon{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:rgba(249,115,22,.12);border:1px solid rgba(249,115,22,.18);font-size:1.4rem;margin-bottom:16px}
     .feature h4{margin:0 0 8px;font-size:1.2rem}
     .feature p{margin:0;color:var(--muted)}
-    .alt{background:rgba(255,255,255,.03);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .alt{background:#eef4ff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
     .two-col{display:grid;grid-template-columns:.95fr 1.05fr;gap:24px;align-items:center}
     .image-panel img{height:100%;width:100%;min-height:540px;object-fit:cover;border-radius:32px}
     .steps{display:grid;gap:14px}
@@ -112,31 +111,31 @@
     .step h4{margin:0 0 4px}
     .step p{margin:0;color:var(--muted)}
     .pill-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
-    .pill{display:flex;gap:10px;align-items:flex-start;padding:14px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--muted)}
+    .pill{display:flex;gap:10px;align-items:flex-start;padding:14px;border-radius:18px;background:#fff;border:1px solid var(--line);color:var(--muted)}
     .plans{display:grid;grid-template-columns:1fr 1fr;gap:18px}
     .plan{padding:28px}
     .plan h4{font-size:1.8rem;margin:0 0 4px}
     .price{color:var(--muted);margin-bottom:16px}
     .trial{display:inline-flex;padding:8px 12px;border-radius:999px;font-size:.9rem;border:1px solid rgba(34,197,94,.28);background:rgba(34,197,94,.1);color:#bbf7d0;margin-bottom:18px}
-    .plan.plus{background:linear-gradient(180deg, rgba(249,115,22,.11), rgba(255,255,255,.05));border-color:rgba(249,115,22,.22)}
+    .plan.plus{background:linear-gradient(180deg, #fff1df, #fff);border-color:#ffd29b}
     .checklist{display:grid;gap:12px}
     .check{display:flex;gap:10px;align-items:flex-start;color:var(--muted)}
-    .check b{color:#fff}
+    .check b{color:#10213a}
     .cta-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
     .panel{padding:26px}
     .contact-lines{display:grid;gap:14px;margin-top:16px}
     .line{display:flex;gap:12px;align-items:flex-start;color:var(--muted)}
     .build-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-    .build-cta{margin-top:18px;padding:24px;background:linear-gradient(90deg, rgba(249,115,22,.12), rgba(255,255,255,.04));border:1px solid rgba(249,115,22,.18);border-radius:28px;display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap}
+    .build-cta{margin-top:18px;padding:24px;background:linear-gradient(90deg, #fff1df, #fff);border:1px solid #ffd29b;border-radius:28px;display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap}
     form{display:grid;gap:14px}
     .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
     label{display:grid;gap:8px;font-size:.95rem;color:var(--muted)}
     input, textarea{
       width:100%;padding:14px 16px;border-radius:18px;border:1px solid var(--line);
-      background:rgba(255,255,255,.05);color:#fff;outline:none
+      background:#fff;color:#10213a;outline:none
     }
     textarea{min-height:150px;resize:vertical}
-    .footer{padding:26px 0;border-top:1px solid var(--line);text-align:center;color:rgba(248,250,252,.58)}
+    .footer{padding:26px 0;border-top:1px solid var(--line);text-align:center;color:#6b7c95}
     .small{font-size:.95rem;color:var(--muted)}
     .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;background:rgba(255,255,255,.06);padding:2px 8px;border-radius:10px}
     @media (max-width: 1024px){
@@ -157,204 +156,204 @@
       .build-cta{align-items:flex-start}
       section{padding:58px 0}
     }
-  </style>
-</head>
-<body>
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <div class="brand">
-        <img src="logo-header.png" alt="TucuGo logo">
-        <div>
-          <h1>TucuGo</h1>
-          <p id="navSlogan">Tu viaje, tu destino.</p>
-        </div>
-      </div>
-      <div class="nav">
-        <a href="#features" data-i18n="navFeatures">Funciones</a>
-        <a href="#services" data-i18n="navServices">Servicios</a>
-        <a href="#businesses" data-i18n="navBusinesses">Negocios</a>
-        <a href="#contact" data-i18n="navContact">Contacto</a>
-        <select id="languageSwitcher" aria-label="Language selector">
-          <option value="es">Español</option>
-          <option value="en">English</option>
-          <option value="pt">Português</option>
-        </select>
-      </div>
-    </div>
-  </div>
+  </style
+</head
+<body
+  <div class="topbar"
+    <div class="container topbar-inner"
+      <div class="brand"
+        <img src="logo-header.png" alt="TucuGo logo"
+        <div
+          <h1 style="color:#0b46b7"TucuGo</h1
+          <p id="navSlogan"Tu viaje, tu destino.</p
+        </div
+      </div
+      <div class="nav"
+        <a href="#features" data-i18n="navFeatures"Funciones</a
+        <a href="#services" data-i18n="navServices"Servicios</a
+        <a href="#businesses" data-i18n="navBusinesses"Negocios</a
+        <a href="#contact" data-i18n="navContact"Contacto</a
+        <select id="languageSwitcher" aria-label="Language selector"
+          <option value="es"Español</option
+          <option value="en"English</option
+          <option value="pt"Português</option
+        </select
+      </div
+    </div
+  </div
 
-  <header class="hero">
-    <div class="container hero-grid">
-      <div>
-        <div class="badge" data-i18n="badge">Movilidad y delivery en una sola app</div>
-        <h2 data-i18n="heroTitle">TucuGo conecta viajes, envíos y negocios en una misma plataforma.</h2>
-        <p class="lead" data-i18n="heroSubtitle">Una solución moderna para autos, motos, SUV, fletes, viajes compartidos y delivery, pensada para ciudades, pueblos y trayectos largos.</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="https://tucugo-37d6c.web.app" target="_blank" rel="noreferrer" data-i18n="openApp">Ingresar a la app</a>
-          <a class="btn btn-secondary" href="#contact" data-i18n="contactUs">Contactanos</a>
-        </div>
-        <div class="stats">
-          <div class="card stat"><strong>6+</strong><span data-i18n="stats1">Servicios en una sola app</span></div>
-          <div class="card stat"><strong>3</strong><span data-i18n="stats2">Idiomas disponibles</span></div>
-          <div class="card stat"><strong>2</strong><span data-i18n="stats3">Planes para negocios</span></div>
-        </div>
-      </div>
-      <div class="visual">
-        <div class="card visual-card">
-          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=80" alt="Servicios TucuGo">
-          <div class="visual-overlay"></div>
-        </div>
-        <div class="floating">
-          <div class="mini">
-            <h4 data-i18n="securityTitle">Seguridad y confianza</h4>
-            <p data-i18n="securityText">TucuGo puede mostrar perfiles con foto, información del conductor, patente, datos del vehículo y seguimiento del servicio.</p>
-          </div>
-          <div class="mini">
-            <h4 data-i18n="availabilityTitle">Cobertura flexible</h4>
-            <p data-i18n="availabilityText">La app está pensada para grandes ciudades, pueblos, zonas rurales y viajes de larga distancia.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+  <header class="hero"
+    <div class="container hero-grid"
+      <div
+        <div class="badge" data-i18n="badge"Movilidad y delivery en una sola app</div
+        <h2 data-i18n="heroTitle"TucuGo conecta viajes, envíos y negocios en una misma plataforma.</h2
+        <p class="lead" data-i18n="heroSubtitle"Una solución moderna para autos, motos, SUV, fletes, viajes compartidos y delivery, pensada para ciudades, pueblos y trayectos largos.</p
+        <div class="actions"
+          <a class="btn btn-primary" href="https://tucugo-37d6c.web.app" target="_blank" rel="noreferrer" data-i18n="openApp"Ingresar a la app</a
+          <a class="btn btn-secondary" href="#contact" data-i18n="contactUs"Contactanos</a
+        </div
+        <div class="stats"
+          <div class="card stat"<strong6+</strong<span data-i18n="stats1"Servicios en una sola app</span</div
+          <div class="card stat"<strong3</strong<span data-i18n="stats2"Idiomas disponibles</span</div
+          <div class="card stat"<strong2</strong<span data-i18n="stats3"Planes para negocios</span</div
+        </div
+      </div
+      <div class="visual"
+        <div class="card visual-card"
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=80" alt="Servicios TucuGo"
+          <div class="visual-overlay"</div
+        </div
+        <div class="floating"
+          <div class="mini"
+            <h4 data-i18n="securityTitle"Seguridad y confianza</h4
+            <p data-i18n="securityText"TucuGo puede mostrar perfiles con foto, información del conductor, patente, datos del vehículo y seguimiento del servicio.</p
+          </div
+          <div class="mini"
+            <h4 data-i18n="availabilityTitle"Cobertura flexible</h4
+            <p data-i18n="availabilityText"La app está pensada para grandes ciudades, pueblos, zonas rurales y viajes de larga distancia.</p
+          </div
+        </div
+      </div
+    </div
+  </header
 
-  <section id="features">
-    <div class="container">
-      <div class="section-head">
-        <h3 data-i18n="sectionFeatures">Todo lo que ofrece TucuGo</h3>
-        <p data-i18n="sectionFeaturesText">TucuGo está pensado para personas, conductores y negocios. Desde un viaje corto hasta un envío o un viaje compartido a otra ciudad.</p>
-      </div>
-      <div class="grid-3" id="featuresGrid"></div>
-    </div>
-  </section>
+  <section id="features"
+    <div class="container"
+      <div class="section-head"
+        <h3 data-i18n="sectionFeatures"Todo lo que ofrece TucuGo</h3
+        <p data-i18n="sectionFeaturesText"TucuGo está pensado para personas, conductores y negocios. Desde un viaje corto hasta un envío o un viaje compartido a otra ciudad.</p
+      </div
+      <div class="grid-3" id="featuresGrid"</div
+    </div
+  </section
 
-  <section id="services" class="alt">
-    <div class="container two-col">
-      <div class="image-panel">
-        <img src="https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=1400&q=80" alt="Delivery y negocios TucuGo">
-      </div>
-      <div>
-        <div class="section-head">
-          <h3 data-i18n="howTitle">Cómo funciona</h3>
-          <p data-i18n="howText">La plataforma está dividida en módulos simples y claros para pasajeros, conductores y negocios.</p>
-        </div>
-        <div class="steps" id="stepsGrid"></div>
-        <div class="card panel" style="margin-top:16px">
-          <h4 data-i18n="servicesTitle" style="margin:0 0 10px;font-size:1.3rem">Servicios disponibles</h4>
-          <div class="pill-list" id="servicesList"></div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <section id="services" class="alt"
+    <div class="container two-col"
+      <div class="image-panel"
+        <img src="https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=1400&q=80" alt="Delivery y negocios TucuGo"
+      </div
+      <div
+        <div class="section-head"
+          <h3 data-i18n="howTitle"Cómo funciona</h3
+          <p data-i18n="howText"La plataforma está dividida en módulos simples y claros para pasajeros, conductores y negocios.</p
+        </div
+        <div class="steps" id="stepsGrid"</div
+        <div class="card panel" style="margin-top:16px"
+          <h4 data-i18n="servicesTitle" style="margin:0 0 10px;font-size:1.3rem"Servicios disponibles</h4
+          <div class="pill-list" id="servicesList"</div
+        </div
+      </div
+    </div
+  </section
 
-  <section id="businesses">
-    <div class="container">
-      <div class="section-head">
-        <h3 data-i18n="businessesTitle">TucuGo para negocios</h3>
-        <p data-i18n="businessesText">Los comercios pueden usar TucuGo Delivery con dos planes. Funciona para cualquier rubro y cada negocio puede elegir su zona de cobertura.</p>
-      </div>
-      <div class="plans">
-        <div class="card plan">
-          <h4 data-i18n="basicPlan">Delivery Básico</h4>
-          <div class="price" data-i18n="basicPrice">USD 5 / mes</div>
-          <div class="trial" data-i18n="trial">Primer mes de prueba</div>
-          <div class="checklist" id="basicList"></div>
-        </div>
-        <div class="card plan plus">
-          <h4 data-i18n="plusPlan">Delivery Plus</h4>
-          <div class="price" data-i18n="plusPrice">USD 15 / mes</div>
-          <div class="trial" style="border-color:rgba(249,115,22,.28);background:rgba(249,115,22,.12);color:#fdba74" data-i18n="trial">Primer mes de prueba</div>
-          <div class="checklist" id="plusList"></div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <section id="businesses"
+    <div class="container"
+      <div class="section-head"
+        <h3 data-i18n="businessesTitle"TucuGo para negocios</h3
+        <p data-i18n="businessesText"Los comercios pueden usar TucuGo Delivery con dos planes. Funciona para cualquier rubro y cada negocio puede elegir su zona de cobertura.</p
+      </div
+      <div class="plans"
+        <div class="card plan"
+          <h4 data-i18n="basicPlan"Delivery Básico</h4
+          <div class="price" data-i18n="basicPrice"USD 5 / mes</div
+          <div class="trial" data-i18n="trial"Primer mes de prueba</div
+          <div class="checklist" id="basicList"</div
+        </div
+        <div class="card plan plus"
+          <h4 data-i18n="plusPlan"Delivery Plus</h4
+          <div class="price" data-i18n="plusPrice"USD 15 / mes</div
+          <div class="trial" style="border-color:rgba(249,115,22,.28);background:rgba(249,115,22,.12);color:#fdba74" data-i18n="trial"Primer mes de prueba</div
+          <div class="checklist" id="plusList"</div
+        </div
+      </div
+    </div
+  </section
 
-  <section class="alt">
-    <div class="container cta-grid">
-      <div class="card panel">
-        <h3 data-i18n="appLinksTitle" style="margin:0 0 12px;font-size:2rem">Ingresá a TucuGo</h3>
-        <p class="small" data-i18n="appLinksText">Podés abrir la app desde tu navegador o instalarla en tu celular. En iPhone, usá Safari y elegí “Agregar a pantalla de inicio”.</p>
-        <div class="actions" style="margin:18px 0 0">
-          <a class="btn btn-primary" href="https://tucugo-37d6c.web.app" target="_blank" rel="noreferrer" data-i18n="openPassenger">Abrir app</a>
-          <div class="btn btn-secondary" style="cursor:default;align-items:flex-start;flex-direction:column;text-align:left">
-            <span data-i18n="installPwa">Instalable como app</span>
-            <small style="font-size:.86rem;color:var(--muted)" data-i18n="installPwaText">Compatible con Android, Windows y preparado para iPhone como PWA.</small>
-          </div>
-        </div>
-      </div>
-      <div class="card panel">
-        <h3 data-i18n="contactCardTitle" style="margin:0;font-size:1.5rem">Datos de contacto</h3>
-        <p class="small" data-i18n="contactCardText">También podés escribirnos directo por correo o WhatsApp.</p>
-        <div class="contact-lines">
-          <div class="line"><span>✉️</span><a href="mailto:tucugo2026@gmail.com">tucugo2026@gmail.com</a></div>
-          <div class="line"><span>📱</span><a href="https://wa.me/5493815862899" target="_blank" rel="noreferrer">+54 9 381 586 2899</a></div>
-          <div class="line"><span>🚀</span><span>TucuGo</span></div>
-        </div>
-        <div class="actions" style="margin-top:18px">
-          <a class="btn btn-primary" href="https://wa.me/5493815862899" target="_blank" rel="noreferrer">WhatsApp</a>
-          <a class="btn btn-secondary" href="mailto:tucugo2026@gmail.com">Email</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <section class="alt"
+    <div class="container cta-grid"
+      <div class="card panel"
+        <h3 data-i18n="appLinksTitle" style="margin:0 0 12px;font-size:2rem"Ingresá a TucuGo</h3
+        <p class="small" data-i18n="appLinksText"Podés abrir la app desde tu navegador o instalarla en tu celular. En iPhone, usá Safari y elegí “Agregar a pantalla de inicio”.</p
+        <div class="actions" style="margin:18px 0 0"
+          <a class="btn btn-primary" href="https://tucugo-37d6c.web.app" target="_blank" rel="noreferrer" data-i18n="openPassenger"Abrir app</a
+          <div class="btn btn-secondary" style="cursor:default;align-items:flex-start;flex-direction:column;text-align:left"
+            <span data-i18n="installPwa"Instalable como app</span
+            <small style="font-size:.86rem;color:var(--muted)" data-i18n="installPwaText"Compatible con Android, Windows y preparado para iPhone como PWA.</small
+          </div
+        </div
+      </div
+      <div class="card panel"
+        <h3 data-i18n="contactCardTitle" style="margin:0;font-size:1.5rem"Datos de contacto</h3
+        <p class="small" data-i18n="contactCardText"También podés escribirnos directo por correo o WhatsApp.</p
+        <div class="contact-lines"
+          <div class="line"<span✉️</span<a href="mailto:tucugo2026@gmail.com"tucugo2026@gmail.com</a</div
+          <div class="line"<span📱</span<a href="https://wa.me/5493815862899" target="_blank" rel="noreferrer"+54 9 381 586 2899</a</div
+          <div class="line"<span🚀</span<spanTucuGo</span</div
+        </div
+        <div class="actions" style="margin-top:18px"
+          <a class="btn btn-primary" href="https://wa.me/5493815862899" target="_blank" rel="noreferrer"WhatsApp</a
+          <a class="btn btn-secondary" href="mailto:tucugo2026@gmail.com"Email</a
+        </div
+      </div
+    </div
+  </section
 
-  <section>
-    <div class="container">
-      <div class="section-head">
-        <h3 data-i18n="buildTitle">Armá tu propio negocio con nosotros</h3>
-        <p data-i18n="buildText">TucuGo también es una oportunidad para emprendedores, referentes locales y personas que quieran desarrollar un servicio digital en su ciudad o país.</p>
-      </div>
-      <div class="build-grid" id="buildGrid"></div>
-      <div class="build-cta">
-        <div>
-          <div style="font-size:1.6rem;font-weight:900" data-i18n="buildCta">Postularme para trabajar con TucuGo</div>
-          <div class="small">tucugo2026@gmail.com</div>
-        </div>
-        <div class="actions" style="margin:0">
-          <a class="btn btn-primary" href="#contact" data-i18n="contactUs">Contactanos</a>
-          <a class="btn btn-secondary" href="https://wa.me/5493815862899" target="_blank" rel="noreferrer">WhatsApp</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <section
+    <div class="container"
+      <div class="section-head"
+        <h3 data-i18n="buildTitle"Armá tu propio negocio con nosotros</h3
+        <p data-i18n="buildText"TucuGo también es una oportunidad para emprendedores, referentes locales y personas que quieran desarrollar un servicio digital en su ciudad o país.</p
+      </div
+      <div class="build-grid" id="buildGrid"</div
+      <div class="build-cta"
+        <div
+          <div style="font-size:1.6rem;font-weight:900" data-i18n="buildCta"Postularme para trabajar con TucuGo</div
+          <div class="small"tucugo2026@gmail.com</div
+        </div
+        <div class="actions" style="margin:0"
+          <a class="btn btn-primary" href="#contact" data-i18n="contactUs"Contactanos</a
+          <a class="btn btn-secondary" href="https://wa.me/5493815862899" target="_blank" rel="noreferrer"WhatsApp</a
+        </div
+      </div
+    </div
+  </section
 
-  <section id="contact" class="alt">
-    <div class="container cta-grid">
-      <div>
-        <div class="section-head">
-          <h3 data-i18n="contactTitle">Contacto</h3>
-          <p data-i18n="contactText">¿Querés usar TucuGo para transporte, delivery o para tu negocio? Escribinos y te respondemos por correo.</p>
-        </div>
-        <p class="small">Formulario listo para enviar a <span class="mono">tucugo2026@gmail.com</span>.</p>
-      </div>
-      <div class="card panel">
-        <form action="https://formsubmit.co/tucugo2026@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="Nueva consulta desde la web de TucuGo">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="table">
-          <div class="row">
-            <label><span data-i18n="name">Nombre</span><input type="text" name="name" required></label>
-            <label><span data-i18n="email">Correo electrónico</span><input type="email" name="email" required></label>
-          </div>
-          <div class="row">
-            <label><span data-i18n="subject">Asunto</span><input type="text" name="subject" required></label>
-            <label><span data-i18n="type">Tipo de consulta</span>
-              <select name="inquiry_type" id="inquiryType"></select>
-            </label>
-          </div>
-          <label><span data-i18n="message">Mensaje</span><textarea name="message" required></textarea></label>
-          <button class="btn btn-primary" type="submit" data-i18n="send">Enviar consulta</button>
-        </form>
-      </div>
-    </div>
-  </section>
+  <section id="contact" class="alt"
+    <div class="container cta-grid"
+      <div
+        <div class="section-head"
+          <h3 data-i18n="contactTitle"Contacto</h3
+          <p data-i18n="contactText"¿Querés usar TucuGo para transporte, delivery o para tu negocio? Escribinos y te respondemos por correo.</p
+        </div
+        <p class="small"Formulario listo para enviar a <span class="mono"tucugo2026@gmail.com</span.</p
+      </div
+      <div class="card panel"
+        <form action="https://formsubmit.co/tucugo2026@gmail.com" method="POST"
+          <input type="hidden" name="_subject" value="Nueva consulta desde la web de TucuGo"
+          <input type="hidden" name="_captcha" value="false"
+          <input type="hidden" name="_template" value="table"
+          <div class="row"
+            <label<span data-i18n="name"Nombre</span<input type="text" name="name" required</label
+            <label<span data-i18n="email"Correo electrónico</span<input type="email" name="email" required</label
+          </div
+          <div class="row"
+            <label<span data-i18n="subject"Asunto</span<input type="text" name="subject" required</label
+            <label<span data-i18n="type"Tipo de consulta</span
+              <select name="inquiry_type" id="inquiryType"</select
+            </label
+          </div
+          <label<span data-i18n="message"Mensaje</span<textarea name="message" required</textarea</label
+          <button class="btn btn-primary" type="submit" data-i18n="send"Enviar consulta</button
+        </form
+      </div
+    </div
+  </section
 
-  <div class="footer">
-    <div class="container" data-i18n="footer">TucuGo · Movilidad, envíos y negocios en una sola plataforma.</div>
-  </div>
+  <div class="footer"
+    <div class="container" data-i18n="footer"TucuGo · Movilidad, envíos y negocios en una sola plataforma.</div
+  </div
 
-  <script>
+  <script
     const featuresIcons = ['🚗','🏍️','🚚','🛵','👥','⭐'];
     const translations = {
       es: {
@@ -603,37 +602,37 @@
 
     function renderLists(lang){
       const t = translations[lang];
-      featuresGrid.innerHTML = t.features.map((item, i) => `
-        <div class="card feature">
-          <div class="icon">${featuresIcons[i] || '✨'}</div>
-          <h4>${item[0]}</h4>
-          <p>${item[1]}</p>
-        </div>`).join('');
+      featuresGrid.innerHTML = t.features.map((item, i) = `
+        <div class="card feature"
+          <div class="icon"${featuresIcons[i] || '✨'}</div
+          <h4${item[0]}</h4
+          <p${item[1]}</p
+        </div`).join('');
 
-      stepsGrid.innerHTML = t.steps.map((item, i) => `
-        <div class="card step">
-          <div class="step-num">${i+1}</div>
-          <div><h4>${item[0]}</h4><p>${item[1]}</p></div>
-        </div>`).join('');
+      stepsGrid.innerHTML = t.steps.map((item, i) = `
+        <div class="card step"
+          <div class="step-num"${i+1}</div
+          <div<h4${item[0]}</h4<p${item[1]}</p</div
+        </div`).join('');
 
-      servicesList.innerHTML = t.services.map(item => `<div class="pill"><span>✅</span><span>${item}</span></div>`).join('');
-      basicList.innerHTML = t.basic.map(item => `<div class="check"><span>✅</span><span>${item}</span></div>`).join('');
-      plusList.innerHTML = t.plus.map(item => `<div class="check"><span>⭐</span><span>${item}</span></div>`).join('');
-      buildGrid.innerHTML = t.build.map((item, i) => `
-        <div class="card feature">
-          <div class="icon">${['🌍','🤝','💸','🚀'][i]}</div>
-          <h4>${item[0]}</h4>
-          <p>${item[1]}</p>
-        </div>`).join('');
-      inquiryType.innerHTML = t.inquiryOptions.map(item => `<option value="${item}">${item}</option>`).join('');
+      servicesList.innerHTML = t.services.map(item = `<div class="pill"<span✅</span<span${item}</span</div`).join('');
+      basicList.innerHTML = t.basic.map(item = `<div class="check"<span✅</span<span${item}</span</div`).join('');
+      plusList.innerHTML = t.plus.map(item = `<div class="check"<span⭐</span<span${item}</span</div`).join('');
+      buildGrid.innerHTML = t.build.map((item, i) = `
+        <div class="card feature"
+          <div class="icon"${['🌍','🤝','💸','🚀'][i]}</div
+          <h4${item[0]}</h4
+          <p${item[1]}</p
+        </div`).join('');
+      inquiryType.innerHTML = t.inquiryOptions.map(item = `<option value="${item}"${item}</option`).join('');
     }
 
     function applyLanguage(lang){
       const t = translations[lang];
       document.documentElement.lang = lang;
       document.title = t.pageTitle;
-      fields.forEach(key => {
-        document.querySelectorAll(`[data-i18n="${key}"]`).forEach(el => el.textContent = t[key]);
+      fields.forEach(key = {
+        document.querySelectorAll(`[data-i18n="${key}"]`).forEach(el = el.textContent = t[key]);
       });
       renderLists(lang);
       localStorage.setItem('tucugo_landing_lang', lang);
@@ -642,7 +641,7 @@
     const initialLang = localStorage.getItem('tucugo_landing_lang') || 'es';
     switcher.value = initialLang;
     applyLanguage(initialLang);
-    switcher.addEventListener('change', e => applyLanguage(e.target.value));
-  </script>
-</body>
-</html>
+    switcher.addEventListener('change', e = applyLanguage(e.target.value));
+  </script
+</body
+</html
